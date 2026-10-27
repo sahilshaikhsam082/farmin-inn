@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farming Inn | Farm-Stay Hotel in Indore</title>
+  <meta name="description" content="Farming Inn is a newly opened farm-stay hotel in Indore, Madhya Pradesh. Calm rooms, farm-to-table dining, open fields and slow mornings, a short drive from the city.">
+  <meta name="theme-color" content="#2f3d2c">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Farming Inn | Farm-Stay Hotel in Indore">
+  <meta property="og:description" content="Calm rooms, farm-to-table dining and open fields, a short drive from Indore.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90">
+
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <i class="bi bi-flower1"></i>
+      <span>Farming Inn</span>
+    </div>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="bi bi-flower1"></i>
+        <span>Farming <em>Inn</em></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="#dining">Dining</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-gold btn-sm" href="#book">Book a Stay</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header id="home" class="hero">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=2000&q=80')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-lg-8">
+          <p class="eyebrow hero-anim" style="--d:.2s">Now open &middot; Indore, Madhya Pradesh</p>
+          <h1 class="hero-title hero-anim" style="--d:.4s">Where the city<br>slows down to <em>the pace of the fields.</em></h1>
+          <p class="hero-lead hero-anim" style="--d:.6s">A farm-stay hotel with sunlit rooms, food grown a few steps from your table, and evenings that end under an open Malwa sky.</p>
+          <div class="d-flex flex-wrap gap-3 hero-anim" style="--d:.8s">
+            <a href="#book" class="btn btn-gold btn-lg">Reserve Your Stay</a>
+            <a href="#rooms" class="btn btn-outline-light btn-lg">Explore Rooms</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick availability bar -->
+    <div class="container quick-book-wrap">
+      <form class="quick-book" id="quickBook" novalidate>
+        <div class="qb-field">
+          <label for="qbIn">Check in</label>
+          <input type="date" id="qbIn" required>
+        </div>
+        <div class="qb-field">
+          <label for="qbOut">Check out</label>
+          <input type="date" id="qbOut" required>
+        </div>
+        <div class="qb-field">
+          <label for="qbGuests">Guests</label>
+          <select id="qbGuests">
+            <option>1 Adult</option>
+            <option selected>2 Adults</option>
+            <option>2 Adults, 1 Child</option>
+            <option>2 Adults, 2 Children</option>
+            <option>Group (5+)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-forest">Check Availability</button>
+      </form>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about section"><span></span></a>
+  </header>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal">
+          <div class="about-collage">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=900&q=80" alt="Rows of young maize growing on the farm" class="img-main" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=600&q=80" alt="Seedlings in pots in the nursery" class="img-float" loading="lazy">
+            <div class="about-badge">
+              <span class="num">2026</span>
+              <span class="txt">Newly opened<br>in Indore</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <p class="eyebrow">Our story</p>
+          <h2 class="section-title">A working farm,<br><em>and a quiet place to stay.</em></h2>
+          <p>Farming Inn sits on open farmland on the edge of Indore, India's cleanest city and the food capital of Madhya Pradesh. We built it for people who want a few days of fresh air, home-style food and unhurried mornings, without travelling far to find them.</p>
+          <p>The vegetables, herbs and grains served in our kitchen come from our own fields and from farmers nearby. Guests are welcome to walk the rows, join the harvest, or just sit on the verandah with a cup of masala chai.</p>
+          <div class="row g-4 mt-2">
+            <div class="col-6 col-md-4">
+              <div class="stat"><i class="bi bi-tree"></i><span>Acres of open farmland</span></div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="stat"><i class="bi bi-basket2"></i><span>Farm-to-table kitchen</span></div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="stat"><i class="bi bi-car-front"></i><span>Short drive from the city</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ROOMS ================= -->
+  <section id="rooms" class="section section-cream">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <p class="eyebrow">Stay with us</p>
+        <h2 class="section-title">Rooms &amp; <em>Cottages</em></h2>
+        <p class="section-sub mx-auto">Each room is finished in natural wood, cotton and stone, with large windows that open onto the fields.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="room-card">
+            <div class="room-img">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80" alt="Garden View Room with wooden furniture" loading="lazy">
+              <span class="room-price">from ₹4,500<small>/night</small></span>
+            </div>
+            <div class="room-body">
+              <h3>Garden View Room</h3>
+              <p>A bright, cosy room looking out over the kitchen garden. Good for couples and solo travellers.</p>
+              <ul class="room-meta">
+                <li><i class="bi bi-people"></i> 2 Guests</li>
+                <li><i class="bi bi-arrows-fullscreen"></i> 280 sq ft</li>
+                <li><i class="bi bi-wifi"></i> Wi-Fi</li>
+              </ul>
+              <a href="#book" class="room-link" data-room="Garden View Room">Book this room <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="room-card featured">
+            <div class="room-img">
+              <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80" alt="Farmhouse Deluxe room with warm lighting" loading="lazy">
+              <span class="room-tag">Most loved</span>
+              <span class="room-price">from ₹6,500<small>/night</small></span>
+            </div>
+            <div class="room-body">
+              <h3>Farmhouse Deluxe</h3>
+              <p>A larger room with a private sit-out, a king bed and views across the open fields.</p>
+              <ul class="room-meta">
+                <li><i class="bi bi-people"></i> 3 Guests</li>
+                <li><i class="bi bi-arrows-fullscreen"></i> 380 sq ft</li>
+                <li><i class="bi bi-cup-hot"></i> Breakfast</li>
+              </ul>
+              <a href="#book" class="room-link" data-room="Farmhouse Deluxe">Book this room <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="room-card">
+            <div class="room-img">
+              <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80" alt="Family Suite with lounge area" loading="lazy">
+              <span class="room-price">from ₹9,000<small>/night</small></span>
+            </div>
+            <div class="room-body">
+              <h3>Heritage Family Suite</h3>
+              <p>Two connected spaces with a lounge, room for the whole family, and a verandah facing the sunset.</p>
+              <ul class="room-meta">
+                <li><i class="bi bi-people"></i> 4 Guests</li>
+                <li><i class="bi bi-arrows-fullscreen"></i> 620 sq ft</li>
+                <li><i class="bi bi-tv"></i> Lounge</li>
+              </ul>
+              <a href="#book" class="room-link" data-room="Heritage Family Suite">Book this room <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AMENITIES ================= -->
+  <section id="amenities" class="section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-4 reveal">
+          <p class="eyebrow">Comforts</p>
+          <h2 class="section-title">Simple things, <em>done well.</em></h2>
+          <p>Everything you need for an easy stay, with the farm all around you.</p>
+          <a href="#book" class="btn btn-forest mt-3">Plan your visit</a>
+        </div>
+        <div class="col-lg-8">
+          <div class="row g-3">
+            <div class="col-6 col-md-4 reveal"><div class="amenity"><i class="bi bi-water"></i><h4>Pool</h4><p>Outdoor pool beside the fields</p></div></div>
+            <div class="col-6 col-md-4 reveal"><div class="amenity"><i class="bi bi-egg-fried"></i><h4>Farm Breakfast</h4><p>Poha, jalebi &amp; fresh produce</p></div></div>
+            <div class="col-6 col-md-4 reveal"><div class="amenity"><i class="bi bi-wifi"></i><h4>Free Wi-Fi</h4><p>Across rooms and common areas</p></div></div>
+            <div class="col-6 col-md-4 reveal"><div class="amenity"><i class="bi bi-p-square"></i><h4>Free Parking</h4><p>Secure, on-site parking</p></div></div>
+            <div class="col-6 col-md-4 reveal"><div class="amenity"><i class="bi bi-balloon-heart"></i><h4>Events</h4><p>Small weddings &amp; gatherings</p></div></div>
+            <div class="col-6 col-md-4 reveal"><div class="amenity"><i class="bi bi-airplane"></i><h4>Airport Pickup</h4><p>From Devi Ahilyabai Holkar Airport</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DINING ================= -->
+  <section id="dining" class="section section-forest">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 order-lg-2 reveal">
+          <div class="dining-img">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1000&q=80" alt="Fresh vegetables harvested from the farm" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1 reveal">
+          <p class="eyebrow eyebrow-light">The Kitchen</p>
+          <h2 class="section-title text-white">From our fields<br><em>to your plate.</em></h2>
+          <p class="text-light-muted">Our kitchen cooks with the seasons. Mornings start with Indori poha and hot jalebi, and lunch is a slow Malwa thali. In the evening there are wood-fired dishes on the lawn. Most of the produce is picked the same day.</p>
+          <div class="menu-list">
+            <div class="menu-item">
+              <span class="menu-name">Indori Poha &amp; Jalebi</span><span class="menu-dots"></span><span class="menu-time">Breakfast</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-name">Malwa Farm Thali</span><span class="menu-dots"></span><span class="menu-time">Lunch</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-name">Dal Bafla, slow-cooked</span><span class="menu-dots"></span><span class="menu-time">Weekends</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-name">Bonfire Dinner on the Lawn</span><span class="menu-dots"></span><span class="menu-time">Evenings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCES ================= -->
+  <section id="experiences" class="section">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <p class="eyebrow">Things to do</p>
+        <h2 class="section-title">Farm <em>Experiences</em></h2>
+        <p class="section-sub mx-auto">Get your hands in the soil, or don't. Every experience is optional.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="exp-card" style="background-image:url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=700&q=80')">
+            <div class="exp-content"><i class="bi bi-flower3"></i><h4>Harvest Walk</h4><p>Pick vegetables with our farmers at sunrise.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="exp-card" style="background-image:url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=700&q=80')">
+            <div class="exp-content"><i class="bi bi-sun"></i><h4>Morning Yoga</h4><p>Guided sessions on the open deck.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="exp-card" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80')">
+            <div class="exp-content"><i class="bi bi-fire"></i><h4>Cooking Class</h4><p>Learn to make dal bafla and Malwa favourites.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="exp-card" style="background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700&q=80')">
+            <div class="exp-content"><i class="bi bi-droplet-half"></i><h4>Ayurvedic Spa</h4><p>Herbal oil massages to unwind.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUOTE BANNER ================= -->
+  <section class="quote-banner" style="background-image:url('https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=2000&q=80')">
+    <div class="quote-overlay"></div>
+    <div class="container position-relative text-center reveal">
+      <i class="bi bi-quote quote-icon"></i>
+      <p class="quote-text">Wake to birdsong, eat what the earth gives,<br>and leave a little lighter than you came.</p>
+      <p class="quote-by">The Farming Inn way</p>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery" class="section section-cream">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <p class="eyebrow">A look around</p>
+        <h2 class="section-title">The <em>Gallery</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <a href="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80" class="g-item g-tall reveal" data-caption="Poolside deck"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700&q=80" alt="Poolside deck" loading="lazy"></a>
+        <a href="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=80" class="g-item reveal" data-caption="Golden hour over the fields"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80" alt="Golden hour over the fields" loading="lazy"></a>
+        <a href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80" class="g-item reveal" data-caption="Dinner at the restaurant"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Dinner at the restaurant" loading="lazy"></a>
+        <a href="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1600&q=80" class="g-item g-wide reveal" data-caption="Deluxe room"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="Deluxe room" loading="lazy"></a>
+        <a href="https://images.unsplash.com/photo-1592595896551-12b371d546d5?w=1600&q=80" class="g-item reveal" data-caption="The lawns"><img src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?w=700&q=80" alt="The lawns" loading="lazy"></a>
+        <a href="https://images.unsplash.com/photo-1499955085172-a104c9463ece?w=1600&q=80" class="g-item reveal" data-caption="The lounge"><img src="https://images.unsplash.com/photo-1499955085172-a104c9463ece?w=700&q=80" alt="The lounge" loading="lazy"></a>
+        <a href="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&q=80" class="g-item g-tall reveal" data-caption="Pool at dusk"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700&q=80" alt="Pool at dusk" loading="lazy"></a>
+        <a href="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1600&q=80" class="g-item reveal" data-caption="Today's harvest"><img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=700&q=80" alt="Today's harvest" loading="lazy"></a>
+        <a href="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1600&q=80" class="g-item g-wide reveal" data-caption="Sun loungers on the terrace"><img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=900&q=80" alt="Sun loungers on the terrace" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <button class="lb-close" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    <button class="lb-nav lb-prev" aria-label="Previous image"><i class="bi bi-chevron-left"></i></button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" aria-label="Next image"><i class="bi bi-chevron-right"></i></button>
+  </div>
+
+  <!-- ================= BOOKING ================= -->
+  <section id="book" class="section book-section">
+    <div class="container">
+      <div class="row g-0 book-card reveal">
+        <div class="col-lg-5 book-side" style="background-image:url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1000&q=80')">
+          <div class="book-side-inner">
+            <p class="eyebrow eyebrow-light">Reservations</p>
+            <h2 class="section-title text-white">Book your <em>escape.</em></h2>
+            <p>Send us your dates and we'll confirm availability within a few hours. Opening offer: 15% off stays of two nights or more.</p>
+            <ul class="book-perks">
+              <li><i class="bi bi-check2-circle"></i> Best rate when you book direct</li>
+              <li><i class="bi bi-check2-circle"></i> Free farm breakfast</li>
+              <li><i class="bi bi-check2-circle"></i> Free cancellation up to 48 hrs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7 book-form-wrap">
+          <form id="bookingForm" class="row g-3" novalidate>
+            <div class="col-md-6">
+              <label for="bName" class="form-label">Full name</label>
+              <input type="text" class="form-control" id="bName" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="bPhone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="bPhone" pattern="[0-9+\s\-]{8,15}" required>
+              <div class="invalid-feedback">Please enter a valid phone number.</div>
+            </div>
+            <div class="col-12">
+              <label for="bEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="bEmail" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="bIn" class="form-label">Check in</label>
+              <input type="date" class="form-control" id="bIn" required>
+              <div class="invalid-feedback">Choose a check-in date.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="bOut" class="form-label">Check out</label>
+              <input type="date" class="form-control" id="bOut" required>
+              <div class="invalid-feedback">Check-out must be after check-in.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="bRoom" class="form-label">Room type</label>
+              <select class="form-select" id="bRoom">
+                <option>Garden View Room</option>
+                <option>Farmhouse Deluxe</option>
+                <option>Heritage Family Suite</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="bGuests" class="form-label">Guests</label>
+              <select class="form-select" id="bGuests">
+                <option>1 Adult</option>
+                <option selected>2 Adults</option>
+                <option>2 Adults, 1 Child</option>
+                <option>2 Adults, 2 Children</option>
+                <option>Group (5+)</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="bMsg" class="form-label">Special requests <span class="text-muted">(optional)</span></label>
+              <textarea class="form-control" id="bMsg" rows="3"></textarea>
+            </div>
+            <div class="col-12 d-flex flex-wrap gap-3 align-items-center">
+              <button type="submit" class="btn btn-forest btn-lg" data-via="whatsapp"><i class="bi bi-whatsapp me-2"></i>Request via WhatsApp</button>
+              <button type="submit" class="btn btn-outline-forest btn-lg" data-via="email"><i class="bi bi-envelope me-2"></i>Request via Email</button>
+            </div>
+            <p class="form-note col-12" id="nightsNote"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section section-cream pb-0">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5 reveal">
+          <p class="eyebrow">Find us</p>
+          <h2 class="section-title">Visit <em>Farming Inn</em></h2>
+          <ul class="contact-list">
+            <li><i class="bi bi-geo-alt"></i><div><strong>Address</strong><span>Farming Inn, Indore, Madhya Pradesh, India</span></div></li>
+            <li><i class="bi bi-telephone"></i><div><strong>Phone</strong><a href="tel:+910000000000" class="js-phone">+91 00000 00000</a></div></li>
+            <li><i class="bi bi-envelope"></i><div><strong>Email</strong><a href="mailto:hello@farming-inn.com" class="js-email">hello@farming-inn.com</a></div></li>
+            <li><i class="bi bi-clock"></i><div><strong>Check-in / Check-out</strong><span>12:00 PM / 11:00 AM</span></div></li>
+          </ul>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="js-wa" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <div class="map-wrap">
+            <iframe title="Map of Farming Inn, Indore" src="https://www.google.com/maps?q=Indore,Madhya+Pradesh&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-4">
+          <a class="navbar-brand footer-brand" href="#home"><i class="bi bi-flower1"></i><span>Farming <em>Inn</em></span></a>
+          <p class="mt-3">A farm-stay hotel in Indore. Come for the fresh air, stay for the food.</p>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Stay</h5>
+          <ul>
+            <li><a href="#book">Reservations</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Newsletter</h5>
+          <p>Seasonal offers and harvest news, now and then.</p>
+          <form class="newsletter" id="newsletter">
+            <input type="email" placeholder="Your email" aria-label="Your email" required>
+            <button type="submit" aria-label="Subscribe"><i class="bi bi-send"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Farming Inn, Indore. All rights reserved.</span>
+        <span>farming-inn.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Toast -->
+  <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+    <div id="siteToast" class="toast align-items-center border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body"></div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
