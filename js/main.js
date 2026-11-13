@@ -6,8 +6,8 @@
 const CONFIG = {
   whatsappNumber: '919893342244',          // country code + number, digits only
   phoneDisplay: '+91 98933 42244',
-  email: 'hello@farming-inn.com',
-  reservationsEmail: 'reservations@farming-inn.com'
+  email: 'hotelfarminginn12@gmail.com',
+  reservationsEmail: 'hotelfarminginn12@gmail.com'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
