@@ -4,8 +4,8 @@
 
 // ---- Edit these before going live ----
 const CONFIG = {
-  whatsappNumber: '910000000000',          // country code + number, digits only
-  phoneDisplay: '+91 00000 00000',
+  whatsappNumber: '919893342244',          // country code + number, digits only
+  phoneDisplay: '+91 98933 42244',
   email: 'hello@farming-inn.com',
   reservationsEmail: 'reservations@farming-inn.com'
 };
