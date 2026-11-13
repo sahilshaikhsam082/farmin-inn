@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------- Newsletter ----------
   $('#newsletter').addEventListener('submit', e => {
     e.preventDefault();
-    notify('Thank you for subscribing. Harvest news is on its way.');
+    notify('Thank you for subscribing. Our offers are on their way.');
     e.target.reset();
   });
 
