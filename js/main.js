@@ -6,6 +6,8 @@
 const CONFIG = {
   whatsappNumber: '919893342244',          // country code + number, digits only
   phoneDisplay: '+91 98933 42244',
+  phone2: '917313633575',                 // extra number, digits only
+  phone2Display: '+91 731 363 3575',
   email: 'hotelfarminginn12@gmail.com',
   reservationsEmail: 'hotelfarminginn12@gmail.com'
 };
@@ -16,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---------- Contact details from config ----------
   $$('.js-phone').forEach(a => { a.href = 'tel:+' + CONFIG.whatsappNumber; a.textContent = CONFIG.phoneDisplay; });
+  $$('.js-phone2').forEach(a => { a.href = 'tel:+' + CONFIG.phone2; a.textContent = CONFIG.phone2Display; });
   $$('.js-email').forEach(a => { a.href = 'mailto:' + CONFIG.email; a.textContent = CONFIG.email; });
   $$('.js-wa').forEach(a => { a.href = 'https://wa.me/' + CONFIG.whatsappNumber; a.target = '_blank'; a.rel = 'noopener'; });
 

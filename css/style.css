@@ -266,6 +266,7 @@ a { color: var(--forest); text-decoration: none; }
 .contact-list strong { display: block; font-size: .76rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
 .contact-list span, .contact-list a { color: var(--ink); }
 .contact-list a:hover { color: var(--gold-2); }
+.contact-list .js-phone2 { display: block; }
 .socials { display: flex; gap: .7rem; }
 .socials a { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--forest); display: grid; place-items: center; color: var(--forest); transition: all .3s; }
 .socials a:hover { background: var(--forest); color: var(--cream); transform: translateY(-3px); }
